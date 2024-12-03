@@ -119,5 +119,9 @@ title: Donate
 {% endblock %}
 
 {% block scripts %}
+    <script type="text/javascript">
+	let pledge_sum = '{{ sponsor_stats.pledge_sum }}';
+	let patron_count = '{{ sponsor_stats.patron_count }}';
+    </script>
     <script async type="text/javascript" src="/js/patreon.js"></script>
 {% endblock %}
